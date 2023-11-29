@@ -12,7 +12,7 @@ public class AdministradorDeConexiones {
 		String host = "127.0.0.1";
 		String dbName = "integrador_cac";
 		String driverName = "com.mysql.cj.jdbc.Driver";
-		String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?serverTimeZone=UTC&useSSL=false";
+		String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?allowPublicKeyRetrieval=true&serverTimeZone=UTC&useSSL=false";
 		
 		try {
 			Class.forName(driverName);
