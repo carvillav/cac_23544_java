@@ -22,7 +22,4 @@ public class Musica extends Articulo{
 	public String toString() {
 		return super.toString() + ", Musica [temas=" + Arrays.toString(temas) + "]";
 	}
-
-	
-
 }

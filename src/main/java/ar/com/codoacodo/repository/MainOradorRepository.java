@@ -6,9 +6,20 @@ public class MainOradorRepository {
 
 	public static void main(String[] args) {
 		
-		OradorRepository repository = new MySqlOradorRepository();
-		Orador orador = repository.getById(1L);
-		System.out.println(orador);
+		//Interface i = new ClaseQueImplementa();
+		 OradorRepository repository = new MySqlOradorRepository();
+		 
+		 //repository.save(new Orador("juan", "perez", "jua@mail.com", "php", LocalDate.now()));
+		 
+		 //elimino a juan!!!
+		 Orador carlos =repository.getById(3L);
+		 
+		 //carlos.setApellido("perez");
+		 //carlos.setNombre("martin");
+		 carlos.setTema("JavaScript");
+		 
+		 repository.update(carlos);
+		 
+		 System.out.println(repository.findAll());
 	}
-
 }
